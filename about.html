@@ -599,16 +599,21 @@
               <div class="widget footer-widget mrr-60 mrr-md-0">
                 <h5 class="widget-title text-white mrb-30">Newsletter</h5>
                 <p class="mrb-30">Seamlessly visualize quality intellectual ideal without collaboration superior montes soon maecenas capita idea listically</p>
-                <div class="newsletter-from">
-                  <div class="email">
-                    <input type="email" name="EMAIL" placeholder="Enter your email" required="" />
-                  </div>
-                  <div class="submit">
-                    <button type="submit">
-                      <i class="fa-solid fa-arrow-right-long"></i>
-                    </button>
-                  </div>
-                </div>
+                <div class="newsletter-from" style="display:block; width:100%;">
+
+    <div class="email" style="width:100%;">
+      <p id="emailError" style="color:red; font-size:14px; margin-top:5px;"></p>
+        <input type="email" id="footerEmail" name="EMAIL" placeholder="Enter your email" style="width:100%;">
+        
+    </div>
+
+    <div class="submit" >
+        <button type="submit">
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+    </div>
+
+</div>
               </div>
             </div>
           </div>
@@ -692,5 +697,25 @@
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/backtotop.js"></script>
     <script src="js/trigger.js"></script>
+    <script>
+document.querySelector(".newsletter-from .submit button").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const emailInput = document.getElementById("footerEmail");
+    const emailError = document.getElementById("emailError");
+    const email = emailInput.value.trim();
+
+    emailError.textContent = ""; // Clear old message
+
+    if (email === "") {
+        emailError.textContent = "Please enter your email!";
+        return;
+    }
+
+    // If email filled → go to 404
+    window.location.href = "404.html";
+});
+</script>
+
   </body>
 </html>
