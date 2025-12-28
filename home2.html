@@ -18,15 +18,29 @@
 
     <!-- FIXED ICONS (WORKING CDN LINKS) -->
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- Aswam Icons (local placeholder) -->
+        <link rel="stylesheet" href="css/aswam.css" />
+     
+    <style>
+      /* Mobile Menu */
+.main-nav-menu.mobile-open {
+    display: block !important;
+}
 
-        <!-- Webex Theme Icons (kept only if other theme-specific icons are needed) -->
-        <link rel="stylesheet"
-          href="https://themejunction.net/html/bexon/demo/assets/fonts/webexthemeicon/style.css">
+.main-nav-menu li.open > ul {
+    display: block !important;
+}
+
+@media(max-width:1199px){
+    .main-nav-menu ul {
+        display:none;
+    }
+}
+
+    </style>      
 
 </head>
+
 
   <body>
     <!-- Preloader Start -->
@@ -42,12 +56,12 @@
             <div class="header-topbar-leftpart">
               <ul class="topbar-info">
                 <li>
-                  <i class="fa-solid fa-envelope"></i>
-                  <a href="mailto:example@gmail.com">info@thestackl.com</a>
+                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:info@thetackly.com">info@thetackly.com</a>
                 </li>
                 <li>
-                  <i class="fa-solid fa-map-marker-alt"></i>
-                  Stackly,salem
+                  <i class="fas fa-map-marker-alt"></i>
+                  Stackly, salem
                 </li>
               </ul>
             </div>
@@ -67,7 +81,7 @@
                 </li>
               </ul>
               <div class="language">
-                <a class="language-btn" href="404.html"><i class="fa-solid fa-globe"></i> <span>English</span></a>
+                <a class="language-btn" href="404.html"><i class="fas fa-globe"></i> <span>English</span></a>
                 <ul class="language-dropdown">
                   <li><a href="404.html">English</a></li>
                   <li><a href="404.html">French</a></li>
@@ -87,20 +101,19 @@
                 <img src="images/logo-dark.png" alt="logo" />
               </a>
             </div>
-             <ul class="main-nav-menu">
+            <ul class="main-nav-menu">
     
     <!-- HOME -->
-      <li class="menu-has-sub">
-    <a href="index.html">
-      Home 
-      <i class="fa-solid fa-angle-down"></i>
-    </a>
+    <li class="menu-has-sub">
+        <a href="index.html">
+            Home 
+            <i class="fas fa-angle-down"></i>
+        </a>
         <ul>
             <li><a href="index.html">Home 1</a></li>
             <li><a href="home2.html">Home 2</a></li>
         </ul>
     </li>
-
     <!-- ABOUT -->
     <li>
         <a href="about.html">About</a>
@@ -128,6 +141,7 @@
     </li>
 
 </ul>
+
             <div class="main-menu-right">
               <a href="404.html" class="mobile-nav-toggler">
                 <span></span>
@@ -135,7 +149,7 @@
                 <span></span>
               </a>
               <a href="404.html" class="search-toggler">
-                <i class="fa-solid fa-search"></i>
+                <i class="fas fa-search"></i>
               </a>
               <div class="header-contact-btn">
                 <a href="contact-us.html" class="theme-btn-6">Contact Us</a>
@@ -146,59 +160,85 @@
       </nav>
     </header>
     <!-- Header Area End -->
-    <!-- Home Slider Start -->
-    <section class="home_banner_01">
-      <div class="home-carousel owl-theme owl-carousel">
-        <div class="slide-item">
-          <div class="image-layer" data-background="images/bg/1.jpg"></div>
-          <div class="shape1"></div>
-          <div class="shape2"></div>
-          <div class="auto-container">
-            <div class="row clearfix">
-              <div class="col-xl-8 col-lg-12 col-md-12 content-column">
-                <div class="content-box">
-                  <h1 class="home-carousel-title">Stackly <span class="text-obj2">Provides</span> Best IT Solution</h1>
-                  <p class="home-carousel-text">We provide best technology and IT services around the world with more than 30+ years of experience</p>
-                  <div class="btn-box">
-                    <a href="contact-us.html" class="theme-btn-1 mrr-15">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="page-about.html" class="theme-btn-8 d-none d-xl-inline-flex d-lg-inline-flex d-md-inline-flex">Read More</a>
-                  </div>
+    <!-- Home Banner Start -->
+    <section class="home_banner_03 bg-no-repeat bg-cover bg-pos-cb bg-silver" data-background="images/bg/abs-bg1.png">
+      <div class="banner-img js-tilt"><img src="images/bg/home3-img1.png" alt="Hero Image" /></div>
+      <div class="container">
+        <div class="banner-item">
+          <span class="side-line-left banner-subtitle">Best Marketing Service</span>
+          <h1 class="banner-title mrb-30">Make The Easiest Solution For You</h1>
+          <p class="banner-text mrb-40">Perferendis Ipsum voluptatibus consectetur adipisicing elit voluptatibus pariatur architecto dolorum perferendis distinctio tempora, necessitatibus omnis magnam.</p>
+          <div class="home3-btn-group">
+            <a href="contact-us.html" class="theme-btn-1 mrr-15">Contact Us <i class="fas fa-angle-right"></i></a>
+            <a href="https://www.youtube.com/watch?v=aXj3XhXN6v4" class="video-button video-popup d-none d-xl-inline-flex d-lg-inline-flex d-md-inline-flex" tabindex="0">
+              <span class="play-icon"> <i aria-hidden="true" class="fas fa-play"></i> </span>
+              <span class="button-text">Video Tour</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="shape-1"></div>
+      <div class="shape-2"></div>
+    </section>
+    <!-- Home Banner End -->
+    <!-- Service Section Area Start -->
+    <section class="service-section-style3 pdt-110 pdb-90 pdb-lg-75">
+      <div class="section-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="service-style3">
+                <div class="service-inner">
+                  <i class="service-icon fas fa-mobile-alt"></i>
+                  <h4 class="service-title">App Development</h4>
+                  <p class="service-description">Lorem ipsum dolor sit amet consectetur adipiscing ipsum rephen elit libero facilisis etiam ridiculus</p>
+                  <a class="theme-text-icon-btn services-link icon-left" href="service-app-devolopment.html">
+                    <span>Read More</span>
+                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                  </a>
+                  <div class="service-inner-obj"></div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="slide-item">
-          <div class="image-layer" data-background="images/bg/2.jpg"></div>
-          <div class="shape1"></div>
-          <div class="auto-container">
-            <div class="row clearfix">
-              <div class="col-xl-8 col-lg-12 col-md-12 content-column">
-                <div class="content-box">
-                  <h1 class="home-carousel-title">Stackly Provides Best IT Solution</h1>
-                  <p class="home-carousel-text">We provide best technology and IT services around the world with more than 30+ years of experience</p>
-                  <div class="btn-box">
-                    <a href="contact-us.html" class="theme-btn-1 mrr-15">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="page-about.html" class="theme-btn-8 d-none d-xl-inline-flex d-lg-inline-flex d-md-inline-flex">Read More</a>
-                  </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="service-style3">
+                <div class="service-inner">
+                  <i class="service-icon fas fa-cloud"></i>
+                  <h4 class="service-title">Digital Agency</h4>
+                  <p class="service-description">Lorem ipsum dolor sit amet consectetur adipiscing ipsum rephen elit libero facilisis etiam ridiculus</p>
+                  <a class="theme-text-icon-btn services-link icon-left" href="service-digital-marketing.html">
+                    <span>Read More</span>
+                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                  </a>
+                  <div class="service-inner-obj"></div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="slide-item">
-          <div class="image-layer" data-background="images/bg/3.jpg"></div>
-          <div class="shape1"></div>
-          <div class="auto-container">
-            <div class="row clearfix">
-              <div class="col-xl-8 col-lg-12 col-md-12 content-column">
-                <div class="content-box">
-                  <h1 class="home-carousel-title">Stackly Provides Best IT Solution</h1>
-                  <p class="home-carousel-text">We provide best technology and IT services around the world with more than 30+ years of experience</p>
-                  <div class="btn-box">
-                    <a href="contact-us.html" class="theme-btn-1 mrr-15">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="page-about.html" class="theme-btn-8 d-none d-xl-inline-flex d-lg-inline-flex d-md-inline-flex">Read More</a>
-                  </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="service-style3">
+                <div class="service-inner">
+                  <i class="service-icon fas fa-laptop-code"></i>
+                  <h4 class="service-title">UX/UI Strategy</h4>
+                  <p class="service-description">Lorem ipsum dolor sit amet consectetur adipiscing ipsum rephen elit libero facilisis etiam ridiculus</p>
+                  <a class="theme-text-icon-btn services-link icon-left" href="service-ui-ux-design.html">
+                    <span>Read More</span>
+                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                  </a>
+                  <div class="service-inner-obj"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="service-style3">
+                <div class="service-inner">
+                  <i class="service-icon fas fa-shield-alt"></i>
+                  <h4 class="service-title">Cyber Security</h4>
+                  <p class="service-description">Lorem ipsum dolor sit amet consectetur adipiscing ipsum rephen elit libero facilisis etiam ridiculus</p>
+                  <a class="theme-text-icon-btn services-link icon-left" href="service-cyber-security.html">
+                    <span>Read More</span>
+                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                  </a>
+                  <div class="service-inner-obj"></div>
                 </div>
               </div>
             </div>
@@ -206,75 +246,77 @@
         </div>
       </div>
     </section>
-    <!-- Home Slider End -->
+    <!-- Service Section Area End -->
     <!-- About Us Section Start -->
-    <section class="about-us-section-style1 pdt-110 pdb-110 bg-no-repeat bg-cover bg-pos-cb" data-background="images/bg/abs-bg1.png" data-overlay-light="3">
+    <section class="about-us-section-style3 pdb-110 pdb-lg-50">
+      <div class="arrow-obj1">
+        <img src="images/objects/arrow-video.png" alt="" />
+      </div>
+      <div class="brand-obj1">
+        <img src="images/objects/brand-object1.png" alt="" />
+      </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-lg-8 col-xl-6 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-            <div class="about-image-box-style1 dot-circle mrb-lg-60">
-              <img class="about-image1 img-full js-tilt d-none d-md-block d-lg-block d-xl-block" src="images/about/about-sm2.jpg" alt="" />
-              <img class="about-image2 img-full" src="images/about/about-lg2.jpg" alt="" />
-              <img class="about-badge1 img-full js-tilt" src="images/about/certificate1.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-10 col-xl-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+        <div class="row mrb-5">
+          <div class="col-md-12 col-lg-6 col-xl-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="title-box">
               <h5 class="side-line-left sub-title text-gradient-color">About Company</h5>
-              <h2 class="title mrb-35 mrb-lg-35">
+              <h2 class="title mrb-25">
                 We Provide the best
                 <span class="text-gradient-color">IT Solutions</span> services
               </h2>
             </div>
-            <p class="mrb-30">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad earum autem laboriosam asperiores dignissimos at tempore</p>
-            <div class="row mrb-35 mrb-lg-35">
-              <div class="col-xl-6 col-lg-6 col-md-12">
-                <ul class="order-list webex-primary-color">
-                  <li>business applications through</li>
-                  <li>procedures whereas processes</li>
-                  <li>business applications through</li>
-                </ul>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-12">
-                <ul class="order-list webex-primary-color">
-                  <li>revolutionary catalysts for chang</li>
-                  <li>catalysts for chang the Seamlessly</li>
-                  <li>business applications through</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row no-gutters mrb-5">
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                <div class="featured-icon-box mrb-15 mrr-30">
-                  <div class="featured-icon">
-                      <i class="fa-solid fa-users"></i>
-                    </div>
-                  <div class="featured-content">
-                    <h4 class="featured-title">Business Growth</h4>
-                    <p class="featured-desc">Quickly productivate just in time strategic lacus mirina</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                <div class="featured-icon-box mrb-sm-40 mrr-30">
-                  <div class="featured-icon">
-                    <i class="fa-solid fa-user"></i>
-                  </div>
-                  <div class="featured-content">
-                    <h4 class="featured-title">IT Consultancy</h4>
-                    <p class="featured-desc mrb-0">Quickly productivate just in time strategic lacus magna</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p class="mrb-35">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad earum autem laboriosam asperiores dignissimos at tempore</p>
             <div class="row">
-              <div class="col-lg-12">
-                <div class="d-inline d-md-flex align-items-center mt-40">
-                  <a href="page-about-us.html" class="theme-btn-1 mrr-40 mrb-sm-20">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                  <div class="signature">
-                    <img src="images/about/signature.png" alt="" />
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="about-style3-info-box">
+                  <h4 class="title"><i class="fas fa-check-circle"></i> IT Consultancy</h4>
+                  <p class="text">Lorem ipsum dolor sit ame sedme consectetur nod.</p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="about-style3-info-box">
+                  <h4 class="title"><i class="fas fa-check-circle"></i> UX/UI Strategy</h4>
+                  <p class="text">Lorem ipsum dolor sit ame sedme consectetur nod.</p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="about-style3-info-box">
+                  <h4 class="title"><i class="fas fa-check-circle"></i> Cyber Security</h4>
+                  <p class="text">Lorem ipsum dolor sit ame sedme consectetur nod.</p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="about-style3-info-box">
+                  <h4 class="title"><i class="fas fa-check-circle"></i> Cloud Services</h4>
+                  <p class="text">Lorem ipsum dolor sit ame sedme consectetur nod.</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-style3-author-area mrb-lg-60">
+              <div class="about-style3-btn">
+                <a href="page-about-us.html" class="theme-btn-1 mrr-40 mrb-sm-30">Read More <i class="fas fa-angle-right"></i></a>
+              </div>
+              <div class="author-content-area d-flex align-items-center">
+                <div class="author-content d-flex align-items-center">
+                  <div class="author-image">
+                    <img src="images/about/founder.jpg" alt="image" />
+                  </div>
+                  <div class="author-text">
+                    <h5 class="title">Alex Martin</h5>
+                    <span class="sub-title">Founder</span>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 col-xl-6 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="about-image-box-style3 dot-circle mrb-lg-60">
+              <img class="about-image1 img-full js-tilt d-none d-md-block d-lg-block d-xl-block" src="images/about/about3-img2.jpg" alt="" />
+              <img class="about-image2 img-full" src="images/about/about3-img1.jpg" alt="" />
+              <div class="years-of-experience">
+                <span class="count-text">12</span>
+                Years <br />
+                Experience
               </div>
             </div>
           </div>
@@ -282,30 +324,60 @@
       </div>
     </section>
     <!-- About Us Section End -->
-    <!-- Client Section Start -->
-    <section class="client-section pdt-60 pdb-80 bg-pos-cb" data-background="images/bg/3.jpg" data-overlay-dark="9">
+    <!-- Funfact Section Start -->
+    <section class="funfact-section bg-silver bg-pos-cb bg-no-repeat pdt-80 pdb-30" data-background="images/bg/divider-bg3.png">
       <div class="section-content">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
-              <div class="owl-carousel client-items client_box_shadow">
-                <div class="client-item">
-                  <img src="images/clients/client_01_white.svg" alt="" />
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
+              <div class="funfact-item">
+                <div class="funfact-icon">
+                  <span class="fas fa-gem"></span>
                 </div>
-                <div class="client-item">
-                  <img src="images/clients/client_02_white.svg" alt="" />
+                <div class="funfact-content">
+                  <h2 class="count-box">
+                    <span data-stop="8560" data-speed="2500" class="count-text">00</span>
+                  </h2>
+                  <h6 class="title">Years Of Experience</h6>
                 </div>
-                <div class="client-item">
-                  <img src="images/clients/client_03_white.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
+              <div class="funfact-item">
+                <div class="funfact-icon">
+                  <span class="fas fa-list"></span>
                 </div>
-                <div class="client-item">
-                  <img src="images/clients/client_04_white.svg" alt="" />
+                <div class="funfact-content">
+                  <h2 class="count-box">
+                    <span data-stop="120" data-speed="2500" class="count-text">00</span>
+                  </h2>
+                  <h6 class="title">Project Completed</h6>
                 </div>
-                <div class="client-item">
-                  <img src="images/clients/client_05_white.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
+              <div class="funfact-item">
+                <div class="funfact-icon">
+                  <span class="fas fa-users"></span>
                 </div>
-                <div class="client-item">
-                  <img src="images/clients/client_06_white.svg" alt="" />
+                <div class="funfact-content">
+                  <h2 class="count-box">
+                    <span data-stop="4585" data-speed="2500" class="count-text">00</span>
+                  </h2>
+                  <h6 class="title">Skilled Experts</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
+              <div class="funfact-item">
+                <div class="funfact-icon">
+                  <span class="fas fa-smile"></span>
+                </div>
+                <div class="funfact-content">
+                  <h2 class="count-box">
+                    <span data-stop="3045" data-speed="2500" class="count-text">00</span>
+                  </h2>
+                  <h6 class="title">Satisfied Clients</h6>
                 </div>
               </div>
             </div>
@@ -313,18 +385,216 @@
         </div>
       </div>
     </section>
-    <!-- Client Section End -->
-    <!-- Service Section Start -->
-    <section class="service-section-style1 pdt-110 pdb-110">
+    <!-- Funfact Section End -->
+    <!-- Project Section Start -->
+    <section class="pdt-105">
+      <div class="section-title mrb-55 mrb-lg-60 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+        <div class="container">
+          <div class="row align-items-end">
+            <div class="col-xl-8 col-lg-12 col-md-12">
+              <div class="title-box">
+                <h5 class="side-line-left sub-title text-gradient-color">Our Projects</h5>
+                <h2 class="mrb-0 mrb-lg-35">
+                  Our Outstanding <br />
+                  Latest<span class="text-gradient-color"> Proejcts</span>
+                  & Works
+                </h2>
+                <div class="section-title-big_text">Team</div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-8 col-md-12 text-lg-start text-xs-end">
+              <p class="mrb-0">Lorem ipsum dolor sit amet consectetur adipiscing augue curae duis pellentesque proin, quam faucibus accumsan feugiat donec aliquet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="project-item-style1-wrapper">
+                <div class="owl-carousel projects_5col">
+                  <div class="project-item-style1">
+                    <span class="icon fas fa-shield-alt"></span>
+                    <div class="project-item-thumb">
+                      <a class="project-item-link-image" href="404.html">
+                        <img class="img-full" src="images/projects/project_01.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="project-item-details">
+                      <div class="project-item-details-inner">
+                        <h6 class="project-item-category"><a href="404.html">Technology</a></h6>
+                        <h4 class="title">Data Protection</h4>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-item-details-hover">
+                      <div class="project-item-details-inner">
+                        <h4 class="title">Data Protection</h4>
+                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="bg-overlay" href="404.html"></a>
+                  </div>
+                  <div class="project-item-style1">
+                    <span class="icon fas fa-cloud"></span>
+                    <div class="project-item-thumb">
+                      <a class="project-item-link-image" href="404.html">
+                        <img class="img-full" src="images/projects/project_02.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="project-item-details">
+                      <div class="project-item-details-inner">
+                        <h6 class="project-item-category"><a href="404.html">Security</a></h6>
+                        <h4 class="title">Cyber Security</h4>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-item-details-hover">
+                      <div class="project-item-details-inner">
+                        <h4 class="title">Cyber Security</h4>
+                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="bg-overlay" href="404.html"></a>
+                  </div>
+                  <div class="project-item-style1">
+                    <span class="icon fas fa-chart-line"></span>
+                    <div class="project-item-thumb">
+                      <a class="project-item-link-image" href="404.html">
+                        <img class="img-full" src="images/projects/project_03.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="project-item-details">
+                      <div class="project-item-details-inner">
+                        <h6 class="project-item-category"><a href="404.html">Development</a></h6>
+                        <h4 class="title">SEO Optimization</h4>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-item-details-hover">
+                      <div class="project-item-details-inner">
+                        <h4 class="title">SEO Optimization</h4>
+                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="bg-overlay" href="404.html"></a>
+                  </div>
+                  <div class="project-item-style1">
+                    <span class="icon fas fa-desktop"></span>
+                    <div class="project-item-thumb">
+                      <a class="project-item-link-image" href="404.html">
+                        <img class="img-full" src="images/projects/project_04.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="project-item-details">
+                      <div class="project-item-details-inner">
+                        <h6 class="project-item-category"><a href="404.html">Development</a></h6>
+                        <h4 class="title">Web Development</h4>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-item-details-hover">
+                      <div class="project-item-details-inner">
+                        <h4 class="title">Web Development</h4>
+                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="bg-overlay" href="404.html"></a>
+                  </div>
+                  <div class="project-item-style1">
+                    <span class="icon fas fa-mobile-alt"></span>
+                    <div class="project-item-thumb">
+                      <a class="project-item-link-image" href="404.html">
+                        <img class="img-full" src="images/projects/project_05.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="project-item-details">
+                      <div class="project-item-details-inner">
+                        <h6 class="project-item-category"><a href="404.html">Technology</a></h6>
+                        <h4 class="title">Software Service</h4>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-item-details-hover">
+                      <div class="project-item-details-inner">
+                        <h4 class="title">Software Service</h4>
+                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="bg-overlay" href="404.html"></a>
+                  </div>
+                  <div class="project-item-style1">
+                    <span class="icon fas fa-chart-line"></span>
+                    <div class="project-item-thumb">
+                      <a class="project-item-link-image" href="404.html">
+                        <img class="img-full" src="images/projects/project_06.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="project-item-details">
+                      <div class="project-item-details-inner">
+                        <h6 class="project-item-category"><a href="404.html">Marketing</a></h6>
+                        <h4 class="title">Digital Marketing</h4>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-item-details-hover">
+                      <div class="project-item-details-inner">
+                        <h4 class="title">Digital Marketing</h4>
+                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
+                        <div class="project-item-link-icon">
+                          <a href="404.html"><i class="fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="bg-overlay" href="404.html"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project Section End -->
+    <!-- Team Section Start -->
+    <section class="team-section pos-rel pdt-80 pdb-80">
       <div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
         <div class="container">
           <div class="row">
             <div class="col"></div>
             <div class="col-md-12 col-lg-10 col-xl-6">
               <div class="title-box-center">
-                <h5 class="sub-title mrb-10">Our Services</h5>
-                <h2 class="title">We Offer Exclusive IT Services</h2>
-                <div class="section-title-big_text">Services</div>
+                <h5 class="sub-title mrb-10">Meet Our Team</h5>
+                <h2 class="title">Let's See Our<span class="text-gradient-color"> Expert</span> Engineers</h2>
+                <div class="section-title-big_text">Team</div>
               </div>
             </div>
             <div class="col"></div>
@@ -333,256 +603,14 @@
       </div>
       <div class="section-content">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-lg-6 col-xl-4 service-wrapper">
-              <div class="service-style1">
-                <div class="thumb">
-                  <img src="images/service/service_01.jpg" alt="Stackly" />
-                  <div class="visible_title_area">
-                    <div class="icon">
-                      <i class="fa-solid fa-paint-brush"></i>
-                    </div>
-                    <h4 class="title"><a href="service-ui-ux-design.html"> UX/UI Design</a></h4>
-                  </div>
-                  <div class="overlay text-center">
-                    <div class="content">
-                      <i class="fa-solid fa-paint-brush"></i>
-                      <h4 class="title"><a href="service-ui-ux-design.html">UX/UI Design</a></h4>
-                      <p class="description">Prevailed discourse assurance estimable everything melancholy projection.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-4 service-wrapper">
-              <div class="service-style1">
-                <div class="thumb">
-                  <img src="images/service/service_02.jpg" alt="Stackly" />
-                  <div class="visible_title_area">
-                    <div class="icon">
-                      <i class="fa-solid fa-microchip"></i>
-                    </div>
-                    <h4 class="title"><a href="service-it-management.html">IT Management </a></h4>
-                  </div>
-                  <div class="overlay text-center">
-                    <div class="content">
-                      <i class="fa-solid fa-microchip"></i>
-                      <h4 class="title"><a href="service-it-management.html">IT Management </a></h4>
-                      <p class="description">Prevailed discourse assurance estimable everything melancholy projection.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-4 service-wrapper">
-              <div class="service-style1">
-                <div class="thumb">
-                  <img src="images/service/service_03.jpg" alt="Stackly" />
-                  <div class="visible_title_area">
-                    <div class="icon">
-                      <i class="fa-solid fa-search"></i>
-                    </div>
-                    <h4 class="title"><a href="service-digital-marketing.html">Digital Marketing</a></h4>
-                  </div>
-                  <div class="overlay text-center">
-                    <div class="content">
-                      <i class="fa-solid fa-search"></i>
-                      <h4 class="title"><a href="service-digital-marketing.html">Digital Marketing</a></h4>
-                      <p class="description">Prevailed discourse assurance estimable everything melancholy projection.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mrt-30">
-            <div class="col-xl-12 text-center">
-              <div class="service-load-more">
-                <h5 class="text">
-                  Do You Want To explore more services just <span><a href="page-services-style-02.html" class="text-underline text-gradient-color">click here</a></span>
-                </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Service Section End -->
-    <!-- Why Choose Us Section Style1 Start -->
-    <section class="why-choose-us-section-style1 bg-no-repeat bg-cover bg-pos-cb pdt-110 pdb-180" data-background="images/bg/4.jpg" data-overlay-gradient-color2="96">
-      <div class="why-choose-us-style2-obj1">
-        <img src="images/objects/why-choose-us-style2-obj1.png" alt="" />
-      </div>
-      <div class="why-choose-us-style2-obj2">
-        <img src="images/objects/why-choose-us-style2-obj2.png" alt="" />
-      </div>
-      <div class="section-content">
-        <div class="container">
-          <div class="row mrb-110">
-            <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
-              <div class="title-box">
-                <h5 class="side-line-left sub-title white text-white">Our Benefits</h5>
-                <h2 class="text-white mrb-60">Why Choose Us?</h2>
-              </div>
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                  <div class="icon-box-style1 mrb-40">
-                    <div class="featured-icon">
-                        <i class="fa-solid fa-shield"></i>
-                      </div>
-                    <div class="icon-box-content">
-                      <h4 class="icon-box-title">High Security</h4>
-                      <p class="icon-box-desc text-gray">Senectus justo malesuada condimentum imperdiet sagittis convallis fusce</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                  <div class="icon-box-style1 mrb-40">
-                    <div class="featured-icon">
-                      <i class="fa-solid fa-user-tie"></i>
-                    </div>
-                    <div class="icon-box-content">
-                      <h4 class="icon-box-title">Skilled Team</h4>
-                      <p class="icon-box-desc text-gray">Senectus justo malesuada condimentum imperdiet sagittis convallis fusce</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                  <div class="icon-box-style1 mrb-40">
-                    <div class="featured-icon">
-                        <i class="fa-solid fa-wallet"></i>
-                      </div>
-                    <div class="icon-box-content">
-                      <h4 class="icon-box-title">Affordable Price</h4>
-                      <p class="icon-box-desc text-gray">Senectus justo malesuada condimentum imperdiet sagittis convallis fusce</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                  <div class="icon-box-style1 mrb-40">
-                    <div class="featured-icon">
-                      <i class="fa-solid fa-headset"></i>
-                    </div>
-                    <div class="icon-box-content">
-                      <h4 class="icon-box-title">24/7 Support</h4>
-                      <p class="icon-box-desc text-gray">Senectus justo malesuada condimentum imperdiet sagittis convallis fusce</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-10 col-lg-10 col-xl-6 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="800ms">
-              <div class="why-choose-us-full-img">
-                <img class="image_01 img-full" src="images/about/divider-img2.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Why Choose Us style2 Section End -->
-    <!-- Request a Call Back Form Section Start -->
-    <section class="request-a-call-back-form-section-style1 pos-rel">
-      <div class="request-a-call-back-section-obj1">
-        <img src="images/objects/arrow-video.png" alt="" />
-      </div>
-      <div class="brand-obj1">
-        <img src="images/objects/brand-object1.png" alt="" />
-      </div>
-      <div class="container">
-        <div class="request-a-call-back-area">
-          <div class="row">
-            <div class="col-lg-5 align-self-center text-right">
-              <!-- <div class="request-a-call-back-form-image wow fadeInLeft">
-                <img src="images/about/request-a-call-back-im1.jpg" alt="" />
-              </div> -->
-              <div class="image-video-block">
-                <img src="images/about/request-a-call-back-im1.jpg" alt="" />
-                <div class="video-link">
-                  <a class="video-popup" href="https://www.youtube.com/watch?v=aXj3XhXN6v4"><i class="fa-solid fa-play"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-7 align-self-center">
-              <div class="request-a-call-back-form">
-                <h2 class="mrb-15">Request a Call Back</h2>
-                <p class="mrb-40">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos at consequuntur necessitatibus!</p>
-                <form action="#">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="form-group mrb-25">
-                        <input type="text" placeholder="Name" class="form-control" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group mrb-25">
-                        <input type="text" placeholder="Phone" class="form-control" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group mrb-25">
-                        <input type="email" placeholder="Email" class="form-control" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group mrb-25">
-                        <select>
-                          <option value="1">Air Freight</option>
-                          <option value="2">Ocean Freight</option>
-                          <option value="3">Land Freight</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="form-group mrb-25">
-                        <textarea rows="3" placeholder="Messages" class="form-control"></textarea>
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="form-group">
-                        <button type="submit" class="theme-btn-6 mrb-lg-60">Submit Now</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Request a Call Back Form Section End -->
-    <!-- Team Section Start -->
-    <section class="team-section pos-rel pdt-105 pdb-80">
-      <div class="section-title mrb-55 mrb-lg-60 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-        <div class="container">
-          <div class="row align-items-end">
-            <div class="col-xl-6 col-lg-6 col-md-12">
-              <div class="title-box">
-                <h5 class="side-line-left sub-title text-gradient-color">Meet Our Team</h5>
-                <h2 class="mrb-0 mrb-md-40">
-                  Let's See Our<span class="text-gradient-color"> Expert</span>
-                  Engineers
-                </h2>
-                <div class="section-title-big_text">Team</div>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-12">
-              <p class="mrb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad earum autem laboriosam asperiores dignissimos at tempore nobis. Exercitationem perspiciatis debitis maiores asperiores, mollitia molestiae cumque!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-content">
-        <div class="container">
-          <div class="right-no-space-300 mrr-lg-0">
+          <div class="team-style1-wrapper">
             <div class="row">
               <div class="owl-carousel item_4col">
                 <div class="team-style1 mrb-30">
                   <div class="team-upper-part">
                     <img class="img-full" src="images/team/team01.jpg" alt="" />
                     <div class="team-social">
-                      <i class="fa-solid fa-share-alt"></i>
+                      <i class="fas fa-share-alt"></i>
                       <ul class="social-list">
                         <li>
                           <a target="_blank" href="https://facebook.com">
@@ -616,7 +644,7 @@
                   <div class="team-upper-part">
                     <img class="img-full" src="images/team/team02.jpg" alt="" />
                     <div class="team-social">
-                      <i class="fa-solid fa-share-alt"></i>
+                      <i class="fas fa-share-alt"></i>
                       <ul class="social-list">
                         <li>
                           <a target="_blank" href="https://facebook.com">
@@ -650,7 +678,7 @@
                   <div class="team-upper-part">
                     <img class="img-full" src="images/team/team03.jpg" alt="" />
                     <div class="team-social">
-                      <i class="fa-solid fa-share-alt"></i>
+                      <i class="fas fa-share-alt"></i>
                       <ul class="social-list">
                         <li>
                           <a target="_blank" href="https://facebook.com">
@@ -684,7 +712,7 @@
                   <div class="team-upper-part">
                     <img class="img-full" src="images/team/team04.jpg" alt="" />
                     <div class="team-social">
-                      <i class="fa-solid fa-share-alt"></i>
+                      <i class="fas fa-share-alt"></i>
                       <ul class="social-list">
                         <li>
                           <a target="_blank" href="https://facebook.com">
@@ -718,7 +746,7 @@
                   <div class="team-upper-part">
                     <img class="img-full" src="images/team/team07.jpg" alt="" />
                     <div class="team-social">
-                      <i class="fa-solid fa-share-alt"></i>
+                      <i class="fas fa-share-alt"></i>
                       <ul class="social-list">
                         <li>
                           <a target="_blank" href="https://facebook.com">
@@ -752,7 +780,7 @@
                   <div class="team-upper-part">
                     <img class="img-full" src="images/team/team06.jpg" alt="" />
                     <div class="team-social">
-                      <i class="fa-solid fa-share-alt"></i>
+                      <i class="fas fa-share-alt"></i>
                       <ul class="social-list">
                         <li>
                           <a target="_blank" href="https://facebook.com">
@@ -789,277 +817,17 @@
       </div>
     </section>
     <!-- Team Section End -->
-    <!-- Project Section Start -->
-    <section class="pos-rel bg-no-repeat bg-silver bg-cover bg-pos-cb pdt-105" data-background="images/bg/abs-bg7.png" data-overlay-light="1">
-      <div class="section-title mrb-55 mrb-lg-60 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-        <div class="container">
-          <div class="row align-items-end">
-            <div class="col-xl-8 col-lg-7 col-md-12">
-              <div class="title-box">
-                <h5 class="side-line-left sub-title text-gradient-color">Our Projects</h5>
-                <h2 class="mrb-0 mrb-md-40">
-                  Our Outstanding <br />
-                  Latest<span class="text-gradient-color"> Proejcts</span>
-                  & Works
-                </h2>
-                <div class="section-title-big_text">Team</div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-5 col-md-12 text-lg-end">
-              <p class="mrb-0">Lorem ipsum dolor sit amet consectetur adipiscing augue curae duis pellentesque proin, quam faucibus accumsan feugiat donec aliquet</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-content">
-        <div class="custom-md-container">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="project-item-style1-wrapper mrb--100 mrb-sm-0">
-                <div class="owl-carousel projects_4col">
-                  <div class="project-item-style1">
-                      <span class="icon"><i class="fa-solid fa-shield"></i></span>
-                    <div class="project-item-thumb">
-                      <a class="project-item-link-image" href="404.html">
-                        <img class="img-full" src="images/projects/project_01.jpg" alt="" />
-                      </a>
-                    </div>
-                    <div class="project-item-details">
-                      <div class="project-item-details-inner">
-                        <h6 class="project-item-category"><a href="404.html">Technology</a></h6>
-                        <h4 class="title">Data Protection</h4>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-item-details-hover">
-                      <div class="project-item-details-inner">
-                        <h4 class="title">Data Protection</h4>
-                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <a class="bg-overlay" href="404.html"></a>
-                  </div>
-                  <div class="project-item-style1">
-                    <span class="icon"><i class="fa-solid fa-cloud"></i></span>
-                    <div class="project-item-thumb">
-                      <a class="project-item-link-image" href="404.html">
-                        <img class="img-full" src="images/projects/project_02.jpg" alt="" />
-                      </a>
-                    </div>
-                    <div class="project-item-details">
-                      <div class="project-item-details-inner">
-                        <h6 class="project-item-category"><a href="404.html">Security</a></h6>
-                        <h4 class="title">Cyber Security</h4>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-item-details-hover">
-                      <div class="project-item-details-inner">
-                        <h4 class="title">Cyber Security</h4>
-                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <a class="bg-overlay" href="404.html"></a>
-                  </div>
-                  <div class="project-item-style1">
-                    <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
-                    <div class="project-item-thumb">
-                      <a class="project-item-link-image" href="404.html">
-                        <img class="img-full" src="images/projects/project_03.jpg" alt="" />
-                      </a>
-                    </div>
-                    <div class="project-item-details">
-                      <div class="project-item-details-inner">
-                        <h6 class="project-item-category"><a href="404.html">Development</a></h6>
-                        <h4 class="title">SEO Optimization</h4>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-item-details-hover">
-                      <div class="project-item-details-inner">
-                        <h4 class="title">SEO Optimization</h4>
-                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <a class="bg-overlay" href="404.html"></a>
-                  </div>
-                  <div class="project-item-style1">
-                    <span class="icon"><i class="fa-solid fa-desktop"></i></span>
-                    <div class="project-item-thumb">
-                      <a class="project-item-link-image" href="404.html">
-                        <img class="img-full" src="images/projects/project_04.jpg" alt="" />
-                      </a>
-                    </div>
-                    <div class="project-item-details">
-                      <div class="project-item-details-inner">
-                        <h6 class="project-item-category"><a href="404.html">Development</a></h6>
-                        <h4 class="title">Web Development</h4>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-item-details-hover">
-                      <div class="project-item-details-inner">
-                        <h4 class="title">Web Development</h4>
-                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <a class="bg-overlay" href="404.html"></a>
-                  </div>
-                  <div class="project-item-style1">
-                    <span class="icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
-                    <div class="project-item-thumb">
-                      <a class="project-item-link-image" href="404.html">
-                        <img class="img-full" src="images/projects/project_05.jpg" alt="" />
-                      </a>
-                    </div>
-                    <div class="project-item-details">
-                      <div class="project-item-details-inner">
-                        <h6 class="project-item-category"><a href="404.html">Technology</a></h6>
-                        <h4 class="title">Software Service</h4>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-item-details-hover">
-                      <div class="project-item-details-inner">
-                        <h4 class="title">Software Service</h4>
-                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <a class="bg-overlay" href="404.html"></a>
-                  </div>
-                  <div class="project-item-style1">
-                    <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
-                    <div class="project-item-thumb">
-                      <a class="project-item-link-image" href="404.html">
-                        <img class="img-full" src="images/projects/project_06.jpg" alt="" />
-                      </a>
-                    </div>
-                    <div class="project-item-details">
-                      <div class="project-item-details-inner">
-                        <h6 class="project-item-category"><a href="404.html">Marketing</a></h6>
-                        <h4 class="title">Digital Marketing</h4>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="project-item-details-hover">
-                      <div class="project-item-details-inner">
-                        <h4 class="title">Digital Marketing</h4>
-                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipiscing duis pellentesque proin</div>
-                        <div class="project-item-link-icon">
-                          <a href="404.html"><i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <a class="bg-overlay" href="404.html"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Project Section End -->
-    <!-- Funfact Section Start -->
-    <section class="funfact-section-style1 bg-no-repeat bg-pos-cb pdt-170 pdb-50 pd-sm-45" data-background="images/bg/divider-bg3.png">
-      <div class="section-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
-              <div class="funfact-item">
-                <div class="funfact-icon">
-                  <i class="fa-solid fa-gem"></i>
-                </div>
-                <div class="funfact-content">
-                  <h2 class="count-box">
-                    <span data-stop="8560" data-speed="2500" class="count-text">00</span>
-                  </h2>
-                  <h6 class="title">Years Of Experience</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
-              <div class="funfact-item">
-                <div class="funfact-icon">
-                  <i class="fa-solid fa-list"></i>
-                </div>
-                <div class="funfact-content">
-                  <h2 class="count-box">
-                    <span data-stop="120" data-speed="2500" class="count-text">00</span>
-                  </h2>
-                  <h6 class="title">Project Completed</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
-              <div class="funfact-item">
-                  <div class="funfact-icon">
-                  <i class="fa-solid fa-users"></i>
-                </div>
-                <div class="funfact-content">
-                  <h2 class="count-box">
-                    <span data-stop="4585" data-speed="2500" class="count-text">00</span>
-                  </h2>
-                  <h6 class="title">Skilled Experts</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
-              <div class="funfact-item">
-                <div class="funfact-icon">
-                  <i class="fa-solid fa-smile"></i>
-                </div>
-                <div class="funfact-content">
-                  <h2 class="count-box">
-                    <span data-stop="3045" data-speed="2500" class="count-text">00</span>
-                  </h2>
-                  <h6 class="title">Satisfied Clients</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Funfact Section End -->
-    <!-- Testimonials Section Start -->
-    <section class="testimonial-style1-section bg-silver pdt-110 pdb-80 bg-no-repeat bg-cover bg-pos-ct" data-background="images/bg/abs-bg2.png">
+    <!-- Working Steps Section Start -->
+    <section class="working-process-section pos-rel bg-no-repeat bg-cover bg-pos-cc pdt-110 pdb-200 pdb-md-150" data-background="images/bg/11.jpg" data-overlay-dark="9">
       <div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
         <div class="container">
           <div class="row">
             <div class="col"></div>
             <div class="col-md-12 col-lg-10 col-xl-6">
               <div class="title-box-center">
-                <h5 class="sub-title mrb-10">Our Testimonials</h5>
-                <h2 class="title mrb-10">What Our Client's Say?</h2>
-                <div class="section-title-big_text">Words</div>
+                <h5 class="sub-title text-white mrb-10">How We Works</h5>
+                <h2 class="title text-white">Our Easy Working Steps</h2>
+                <div class="section-title-big_text">Working</div>
               </div>
             </div>
             <div class="col"></div>
@@ -1068,36 +836,65 @@
       </div>
       <div class="section-content">
         <div class="container">
-          <div class="testimonial-style1">
+          <div class="working-process-wrapper">
+            <div class="working-process-shape">
+              <img src="images/bg/working-process-shape.png" alt="" />
+            </div>
             <div class="row">
-              <div class="col-xl-4 col-lg-6">
-                <div class="testimonial-item">
-                  <div class="author-image">
-                    <img src="images/testimonials/testimonial-img1.jpg" alt="" />
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="process-item mrb-md-40">
+                  <div class="process-icon-box">
+                    <div class="process-icon">
+                      <span class="fas fa-search"></span>
+                    </div>
+                    <div class="process-count"></div>
                   </div>
-                  <p class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit oluptatibus blanditiis amet optio fugiat nisi est repellendus iusto quis harum laboriosam nostrum unde distinctio</p>
-                  <h5 class="client-name">Jesica Nowmi</h5>
-                  <span class="client-designation">Client, USA</span>
+                  <div class="process-details">
+                    <h4 class="process-title">Analysis</h4>
+                    <p class="process-text">Lorem ipsum dolor sit amet consect adicing aliquam</p>
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-6">
-                <div class="testimonial-item">
-                  <div class="author-image">
-                    <img src="images/testimonials/testimonial-img2.jpg" alt="" />
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="process-item mrb-md-40">
+                  <div class="process-icon-box">
+                    <div class="process-icon">
+                      <span class="fas fa-star"></span>
+                    </div>
+                    <div class="process-count"></div>
                   </div>
-                  <p class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit oluptatibus blanditiis amet optio fugiat nisi est repellendus iusto quis harum laboriosam nostrum unde distinctio</p>
-                  <h5 class="client-name">Aurther Maxwell</h5>
-                  <span class="client-designation">Client, USA</span>
+                  <div class="process-details">
+                    <h4 class="process-title">Designing</h4>
+                    <p class="process-text">Lorem ipsum dolor sit amet consect adicing aliquam</p>
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-6">
-                <div class="testimonial-item">
-                  <div class="author-image">
-                    <img src="images/testimonials/testimonial-img3.jpg" alt="" />
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="process-item mrb-md-40">
+                  <div class="process-icon-box">
+                    <div class="process-icon">
+                      <span class="fas fa-laptop-code"></span>
+                    </div>
+                    <div class="process-count"></div>
                   </div>
-                  <p class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit oluptatibus blanditiis amet optio fugiat nisi est repellendus iusto quis harum laboriosam nostrum unde distinctio</p>
-                  <h5 class="client-name">Josh Martin</h5>
-                  <span class="client-designation">Client, USA</span>
+                  <div class="process-details">
+                    <h4 class="process-title">Development</h4>
+                    <p class="process-text">Lorem ipsum dolor sit amet consect adicing aliquam</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="process-item mrb-md-40 mrb-sm-0">
+                  <div class="process-icon-box">
+                    <div class="process-icon">
+                      <span class="fas fa-rocket"></span>
+                    </div>
+                    <div class="process-count"></div>
+                  </div>
+                  <div class="process-details">
+                    <h4 class="process-title">Delivery</h4>
+                    <p class="process-text">Lorem ipsum dolor sit amet consect adicing aliquam</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1105,23 +902,186 @@
         </div>
       </div>
     </section>
-    <!-- Testimonials Section End -->
-    <!-- News Section Start -->
-    <section class="pdt-105 bg-cover" data-background="images/bg/abs-bg8.png">
-      <div class="section-title mrb-60 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+    <!-- Working Steps Section End -->
+    <!-- Why Choose Us Section Style1 Start -->
+    <section class="why-choose-us-section-style1 features-section bg-no-repeat bg-cover bg-pos-cb pdb-180 pdb-lg-170" data-background="images/bg/4.jpg" data-overlay-gradient-color2="96">
+      <div class="why-choose-us-style2-obj1">
+        <img src="images/objects/why-choose-us-style2-obj1.png" alt="" />
+      </div>
+      <div class="why-choose-us-style2-obj2">
+        <img src="images/objects/why-choose-us-style2-obj2.png" alt="" />
+      </div>
+      <div class="section-content">
         <div class="container">
-          <div class="row align-items-end">
-            <div class="col-xl-6 col-lg-8 col-md-12">
-              <div class="title-box-center">
-                <h5 class="side-line-left sub-title text-gradient-color">Latest Blog</h5>
-                <h2 class="mrb-25">News & <span class="text-gradient-color">Updates </span></h2>
-                <div class="section-title-big_text">News</div>
-                <p class="mrb-0 mrb-md-40">Lorem ipsum dolor sit amet, consectetur adipisicing nesciunt, aliquam alias sunt. Dolores aliquid unde reprehenderit omnis vitae cupiditate distinctio?</p>
+          <div class="row pdt-100 mrb-110">
+            <div class="col-md-10 col-lg-10 col-xl-6 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="800ms">
+              <div class="why-choose-us-full-img-style2 mrb-lg-50">
+                <img class="image_01 img-full" src="images/about/divider-img2.jpg" alt="" />
               </div>
             </div>
-            <div class="col-xl-6 col-lg-4 col-md-12 text-lg-end">
-              <a href="page-news.html" class="theme-btn-1">All News <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
+              <div class="title-box">
+                <h5 class="side-line-left sub-title white text-white">Our Benefits</h5>
+                <h2 class="text-white mrb-60">Why Choose Us?</h2>
+              </div>
+              <div class="row">
+                <div class="col-xl-4 col-lg-3 col-md-6">
+                  <div class="features-item-style1 item-style2">
+                    <div class="features-inner">
+                      <div class="features-shape">
+                        <img src="images/objects/6.png" alt="" />
+                      </div>
+                      <div class="features-count"></div>
+                      <i class="features-icon fas fa-shield-alt"></i>
+                      <h4 class="features-title">
+                        <a href="page-about.html"
+                          >High <br />
+                          Security
+                        </a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-3 col-md-6">
+                  <div class="features-item-style1 item-style2">
+                    <div class="features-inner">
+                      <div class="features-shape">
+                        <img src="images/objects/6.png" alt="" />
+                      </div>
+                      <div class="features-count"></div>
+                      <i class="features-icon fas fa-user-shield"></i>
+                      <h4 class="features-title">
+                        <a href="page-about.html"
+                          >Skilled <br />
+                          Experts</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-3 col-md-6">
+                  <div class="features-item-style1 item-style2">
+                    <div class="features-inner">
+                      <div class="features-shape">
+                        <img src="images/objects/6.png" alt="" />
+                      </div>
+                      <div class="features-count"></div>
+                      <i class="features-icon fas fa-handshake"></i>
+                      <h4 class="features-title">
+                        <a href="page-about.html"
+                          >24/7 <br />
+                          Support</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us style2 Section End -->
+    <!-- Request a Call Back Form Section Start -->
+    <section class="request-a-call-back-form-section-style3 pos-rel">
+      <div class="container">
+        <div class="request-a-call-back-form-style3">
+          <div class="row">
+            <div class="col-xl-5 col-lg-12">
+              <h5 class="side-line-left sub-title f-weight-700 text-gradient-color">Get Quick Support</h5>
+              <h2 class="mrb-15">Request a Call Back</h2>
+              <p class="mrb-45">Nascetur cum integer potenti elementum fusce litora phasellus dignissim facilisi et inceptos malesuada</p>
+              <div class="row mrb-lg-20">
+                <div class="col-xl-6 col-lg-4 col-md-6">
+                  <div class="contact-info">
+                    <div class="contact-info-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info-content">
+                      <h4 class="title">Call Us Now</h4>
+                      <ul>
+                        <li><a class="tel-number text-webex-secondary-color" href="tel:123456789">+12 345 666 789</a></li>
+                        <li><a class="tel-number text-webex-secondary-color" href="tel:001255863">+123456789</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-4 col-md-6">
+                  <div class="contact-info">
+                    <div class="contact-info-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-info-content">
+                      <h4 class="title">Office Address</h4>
+                      <p>Level 5A, 32 Swanston Street Melbourne, 4778, Australia</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+            <div class="col-xl-6 col-lg-12 align-self-center">
+              <div class="request-a-call-back-form">
+                <form action="#">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group mrb-25">
+                        <input type="text" placeholder="Name" class="form-control" required />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mrb-25">
+                        <input type="text" placeholder="Phone" class="form-control" required />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mrb-25">
+                        <input type="email" placeholder="Email" class="form-control" required />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mrb-25">
+                        <select>
+                          <option value="1">Air Freight</option>
+                          <option value="2">Ocean Freight</option>
+                          <option value="3">Land Freight</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group mrb-25">
+                        <textarea rows="3" placeholder="Messages" class="form-control" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="form-group">
+                        <button type="submit" class="theme-btn-6">Submit Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Request a Call Back Form Section End -->
+    <!-- News Section Start -->
+    <section class="pdt-105">
+      <div class="section-title text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+        <div class="container">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-md-12 col-lg-10 col-xl-6">
+              <div class="title-box-center">
+                <h5 class="sub-title mrb-10">Latest Blog</h5>
+                <h2 class="title">News & <span class="text-gradient-color">Updates </span></h2>
+                <div class="section-title-big_text">News</div>
+              </div>
+            </div>
+            <div class="col"></div>
           </div>
         </div>
       </div>
@@ -1150,7 +1110,7 @@
                       <span><a href="page-news.html">Admin</a></span>
                     </div>
                     <div class="post-link">
-                      <span class="entry-date"><i class="far fa-calendar-alt mrr-10 text-gradient-color"></i>01 Jan, 2022</span>
+                      <span class="entry-date"><i class="far fa-calendar-alt mrr-10 text-gradient-color"></i>01 Jan, 2025</span>
                     </div>
                   </div>
                 </div>
@@ -1178,7 +1138,7 @@
                       <span><a href="page-news.html">Admin</a></span>
                     </div>
                     <div class="post-link">
-                      <span class="entry-date"><i class="far fa-calendar-alt mrr-10 text-gradient-color"></i>01 Jan, 2022</span>
+                      <span class="entry-date"><i class="far fa-calendar-alt mrr-10 text-gradient-color"></i>01 Jan, 2025</span>
                     </div>
                   </div>
                 </div>
@@ -1206,7 +1166,7 @@
                       <span><a href="page-news.html">Admin</a></span>
                     </div>
                     <div class="post-link">
-                      <span class="entry-date"><i class="far fa-calendar-alt mrr-10 text-gradient-color"></i>01 Jan, 2022</span>
+                      <span class="entry-date"><i class="far fa-calendar-alt mrr-10 text-gradient-color"></i>01 Jan, 2025</span>
                     </div>
                   </div>
                 </div>
@@ -1221,7 +1181,7 @@
           <div class="call-to-action-inner">
             <div class="call-to-action-left">
                 <div class="call-to-action-icon">
-                <i class="fa-solid fa-comments"></i>
+                <i class="fas fa-comments"></i>
               </div>
               <div class="call-to-action-content">
                 <p class="call-to-action-sub-title">Need Any Consultaitons?</p>
@@ -1248,7 +1208,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="widget footer-widget mrr-60 mrr-md-0">
                 <div class="footer-logo">
-                  <img src="images/logo-light.png" alt="" class="mrb-25" />
+                  <img src="images/" alt="" class="mrb-25" />
                 </div>
                 <p class="mrb-25">There are many vari of pass but majority have suffered some injected of a humour</p>
                 <ul class="social-list">
@@ -1283,9 +1243,9 @@
               <div class="widget footer-widget mrr-30 mrr-md-0">
                 <h5 class="widget-title text-white mrb-30">Contact</h5>
                 <address class="mrb-0">
-                  <p>Stackly, salem</p>
+                  <p>Stackly,salem</p>
                   <div class="mrb-10">
-                    <a href="404.html"><i class="fas fa-phone-alt mrr-10"></i>+1234567890</a>
+                    <a href="404.html"><i class="fas fa-phone-alt mrr-10"></i>+123456789</a>
                   </div>
                   <div class="mrb-10">
                     <a href="404.html"><i class="fas fa-envelope mrr-10"></i>info@thestackly.com</a>
@@ -1300,7 +1260,7 @@
               <div class="widget footer-widget mrr-60 mrr-md-0">
                 <h5 class="widget-title text-white mrb-30">Newsletter</h5>
                 <p class="mrb-30">Seamlessly visualize quality intellectual ideal without collaboration superior montes soon maecenas capita idea listically</p>
-                <div class="newsletter-from" style="display:block; width:100%;">
+               <div class="newsletter-from" style="display:block; width:100%;">
 
     <div class="email" style="width:100%;">
       <p id="emailError" style="color:red; font-size:14px; margin-top:5px;"></p>
@@ -1310,18 +1270,22 @@
 
     <div class="submit" >
         <button type="submit">
-            <i class="fa-solid fa-arrow-right-long"></i>
+            <i class="fas fa-arrow-right"></i>
         </button>
     </div>
 
 </div>
+
+
+
+
               </div>
             </div>
           </div>
           <div class="row pdt-30 pdb-30 footer-copyright-area">
             <div class="col-xl-12">
               <div class="text-center">
-                <span>Copyright by Stackly © 2025</span>
+                <span>Copyright by Stackly © 2025. </span>
               </div>
             </div>
           </div>
@@ -1337,15 +1301,11 @@
           <span></span>
           <span></span>
         </a>
-        <div class="side-panel-logo logo-box">
-          <a href="index-2.html" aria-label="logo image">
-            <img src="images/logo-light.png" alt="logo" />
-          </a>
-        </div>
+        
         <div class="mobile-nav-container"></div>
         <ul class="list-items mobile-sidebar-contact">
-          <li><span class="fa fa-map-marker-alt mrr-10 text-gradient-color"></span>Stackly,salem</li>
-          <li><span class="fas fa-envelope mrr-10 text-gradient-color"></span><a href="mailto:example@gmail.com">info@thestackly.com</a></li>
+          <li><span class="fa fa-map-marker-alt mrr-10 text-gradient-color"></span>Stackly, salem</li>
+          <li><span class="fas fa-envelope mrr-10 text-gradient-color"></span><a href="mailto:info@thetackly.com">info@thetackly.com</a></li>
           <li><span class="fas fa-phone-alt mrr-10 text-gradient-color"></span><a href="tel:123456789">+12 345 666 789</a></li>
         </ul>
         <ul class="social-list list-webex-primary-color">
@@ -1373,7 +1333,7 @@
           <label for="search" class="sr-only">search here</label>
           <input type="text" id="search" placeholder="Search Here..." />
           <button type="submit" aria-label="search submit" class="thm-btn">
-            <i class="fa-solid fa-search"></i>
+            <i class="fas fa-search"></i>
           </button>
         </form>
       </div>
@@ -1398,7 +1358,32 @@
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/backtotop.js"></script>
     <script src="js/trigger.js"></script>
+    <script src="js/icon-mapper.js"></script>
     <script>
+// MOBILE MENU OPEN / CLOSE
+const mobileBtn = document.querySelector(".mobile-nav-toggler");
+const body = document.body;
+
+mobileBtn.addEventListener("click", () => {
+    body.classList.toggle("mobile-nav-open");
+});
+
+// FIX HOME DROPDOWN CLICK ON MOBILE
+document.querySelectorAll(".main-nav-menu > li > a").forEach(link => {
+    link.addEventListener("click", function(e) {
+
+        // If menu has dropdown
+        const parent = this.parentElement;
+        const subMenu = parent.querySelector("ul");
+
+        if (window.innerWidth < 992 && subMenu) {
+            e.preventDefault();            // stop link click
+            subMenu.classList.toggle("open-mobile");
+        }
+    });
+});
+</script>
+<script>
 document.querySelector(".newsletter-from .submit button").addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -1417,6 +1402,11 @@ document.querySelector(".newsletter-from .submit button").addEventListener("clic
     window.location.href = "404.html";
 });
 </script>
+
+
+
+
+
 
   </body>
 </html>

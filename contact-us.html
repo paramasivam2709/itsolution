@@ -18,17 +18,8 @@
 
     <!-- FIXED ICONS (WORKING CDN LINKS) -->
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Webex Base Icons -->
-    <link rel="stylesheet"
-          href="https://themejunction.net/html/bexon/demo/assets/fonts/webexbaseicon/style.css">
-
-    <!-- Webex Theme Icons -->
-    <link rel="stylesheet"
-          href="https://themejunction.net/html/bexon/demo/assets/fonts/webexthemeicon/style.css">
+        <!-- Aswam Icons (local placeholder) -->
+        <link rel="stylesheet" href="css/aswam.css" />
 
 </head>
 
@@ -46,11 +37,11 @@
             <div class="header-topbar-leftpart">
               <ul class="topbar-info">
                 <li>
-                  <i class="base-icon-email1"></i>
+                  <i class="fas fa-envelope"></i>
                   <a href="mailto:info@thetackly.com">info@thetackly.com</a>
                 </li>
                 <li>
-                  <i class="base-icon-pin2"></i>
+                  <i class="fas fa-map-marker-alt"></i>
                   Stackly, salem
                 </li>
               </ul>
@@ -59,6 +50,12 @@
               <ul class="topbar-social">
                 <li>
                   <a href="404.html"><i class="fab fa-twitter"></i></a>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                </li>
                 </li>
                 <li>
                   <a href="404.html"><i class="fab fa-facebook"></i></a>
@@ -71,7 +68,7 @@
                 </li>
               </ul>
               <div class="language">
-                <a class="language-btn" href="404.html"><i class="base-icon-globe1"></i> <span>English</span></a>
+                <a class="language-btn" href="404.html"><i class="fas fa-globe"></i> <span>English</span></a>
                 <ul class="language-dropdown">
                   <li><a href="404.html">English</a></li>
                   <li><a href="404.html">French</a></li>
@@ -97,7 +94,7 @@
     <li class="menu-has-sub">
         <a href="index.html">
             Home 
-            <i class="base-icon-angle-down"></i>
+            <i class="fas fa-angle-down"></i>
         </a>
         <ul>
             <li><a href="index.html">Home 1</a></li>
@@ -139,7 +136,7 @@
                 <span></span>
               </a>
               <a href="404.html" class="search-toggler">
-                <i class="base-icon-search-1"></i>
+                <i class="fas fa-search"></i>
               </a>
               <div class="header-contact-btn">
                 <a href="contact-us.html" class="theme-btn-6">Contact Us</a>
@@ -176,7 +173,7 @@
               <div class="col-lg-6 col-xl-4">
                 <div class="contact-block d-flex mrb-30">
                   <div class="contact-icon">
-                    <i class="base-icon-map"></i>
+                    <i class="fas fa-map-marker-alt"></i>
                   </div>
                   <div class="contact-details mrl-30">
                     <h5 class="icon-box-title mrb-10">Australia Address</h5>
@@ -187,7 +184,7 @@
               <div class="col-lg-6 col-xl-4">
                 <div class="contact-block d-flex mrb-30">
                   <div class="contact-icon">
-                    <i class="base-icon-094-email-2"></i>
+                      <i class="fas fa-envelope"></i>
                   </div>
                   <div class="contact-details mrl-30">
                     <h5 class="icon-box-title mrb-10">Email Us</h5>
@@ -198,7 +195,7 @@
               <div class="col-lg-6 col-xl-4">
                 <div class="contact-block d-flex mrb-30">
                   <div class="contact-icon">
-                    <i class="base-icon-phone-2"></i>
+                      <i class="fas fa-phone"></i>
                   </div>
                   <div class="contact-details mrl-30">
                     <h5 class="icon-box-title mrb-10">Phone Number</h5>
@@ -355,7 +352,7 @@
 
     <div class="submit" >
         <button type="submit">
-            <i class="fa-solid fa-arrow-right-long"></i>
+            <i class="fas fa-arrow-right"></i>
         </button>
     </div>
 
@@ -418,7 +415,7 @@
           <label for="search" class="sr-only">search here</label>
           <input type="text" id="search" placeholder="Search Here..." />
           <button type="submit" aria-label="search submit" class="thm-btn">
-            <i class="base-icon-search-1"></i>
+            <i class="fas fa-search"></i>
           </button>
         </form>
       </div>
@@ -444,6 +441,7 @@
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/backtotop.js"></script>
     <script src="js/trigger.js"></script>
+    <script src="js/icon-mapper.js"></script>
     <script>
 document.querySelector(".newsletter-from .submit button").addEventListener("click", function (e) {
     e.preventDefault();
