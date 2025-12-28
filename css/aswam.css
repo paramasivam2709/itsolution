@@ -1,0 +1,6 @@
+/* Aswam icon font placeholder
+   This file imports Font Awesome as a temporary fallback
+   Replace with actual Aswam font definitions when available */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+/* Add Aswam @font-face rules or CSS here when you have the font files/CDN */
